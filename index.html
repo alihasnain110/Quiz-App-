@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz App</title>
+        <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-dasebase.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="loginform">
+                <h2 class="SignUpheading">SignUp Form</h2>
+                <form onsubmit="event.preventDefault(); signUp();">
+                    <input
+                        id="name"
+                        type="text"
+                        placeholder="Your Name"
+                        required="required"
+                    >
+                    <br>
+                    <br>
+                    <input
+                        id="email"
+                        type="email"
+                        placeholder="Your Email"
+                        required="required"
+                    >
+                    <br>
+                    <br>
+                    <input
+                        id="password"
+                        type="password"
+                        placeholder="Your Password"
+                        required="required"
+                    >
+                    <br>
+                    <br>
+                    <button type="submit">SignUp now</button>
+                    <a href="Quizapp.html">Quiz App</a>
+                </form>
+            </div>
+        </div>
+    </body>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</html>
